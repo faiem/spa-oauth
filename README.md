@@ -1,6 +1,6 @@
 # AWS Cognito SPA Auth Sample
 
-[![AWS Cognito SPA Auth Demo](https://img.youtube.com/vi/6bfCQPxwelY/0.jpg)](https://www.youtube.com/watch?v=6bfCQPxwelY)
+[![AWS Cognito SPA Auth Demo](https://img.youtube.com/vi/6bfCQPxwelY/10.jpg)](https://www.youtube.com/watch?v=6bfCQPxwelY)
 
 This is a simple Single Page Application (SPA) example using AWS Cognito for authentication with JavaScript and the `oidc-client-ts` library.
 
