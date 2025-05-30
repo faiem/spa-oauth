@@ -1,0 +1,34 @@
+# Node/Vite/VSCode/OS junk
+node_modules/
+dist/
+.vscode/
+.env
+.env.*
+.DS_Store
+*.log
+*.tmp
+*.local
+*.cache
+*.swp
+*.swo
+
+# OS junk
+Thumbs.db
+Desktop.ini
+
+# Ignore local credentials and secrets
+*.secret
+*.env.local
+
+# Ignore build output
+build/
+
+# Ignore coverage
+coverage/
+
+# Ignore Python server cache
+__pycache__/
+
+# Ignore personal files
+*.bak
+*.old
