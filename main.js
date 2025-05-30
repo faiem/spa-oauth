@@ -20,8 +20,8 @@ const signOutRedirect = () =>
     document.getElementById("id-token").value = "";
     document.getElementById("refresh-token").value = "";
     // Remove oidc-client user from localStorage/sessionStorage
-    localStorage.removeItem("oidc.user:[PAT HERE]:[PAT HERE]");
-    sessionStorage.removeItem("oidc.user:[PAT HERE]:[PAT HERE]");
+    localStorage.removeItem("oidc.user:[Use Authority value]:[client id]");
+    sessionStorage.removeItem("oidc.user:[Use Authority value]:[client id]");
     // Redirect to Cognito logout
     const clientId = "[PAT HERE]";
     const logoutUri = "http://localhost:5500";
