@@ -1,7 +1,7 @@
 import { UserManager } from "https://cdn.jsdelivr.net/npm/oidc-client-ts@2.2.2/+esm";
 
 const cognitoAuthConfig = {
-    authority: "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_iNkyPM0Ac",
+    authority: "[PAT HERE]",
     client_id: "[PAT HERE]",
     redirect_uri: "http://localhost:5500/callback", // Changed back to port 5500 for local testing
     response_type: "code",
@@ -20,12 +20,12 @@ const signOutRedirect = () =>
     document.getElementById("id-token").value = "";
     document.getElementById("refresh-token").value = "";
     // Remove oidc-client user from localStorage/sessionStorage
-    localStorage.removeItem("oidc.user:https://cognito-idp.us-east-1.amazonaws.com/us-east-1_iNkyPM0Ac:2hs0mhkckv2rer40grvkeu6qe6");
-    sessionStorage.removeItem("oidc.user:https://cognito-idp.us-east-1.amazonaws.com/us-east-1_iNkyPM0Ac:2hs0mhkckv2rer40grvkeu6qe6");
+    localStorage.removeItem("oidc.user:[PAT HERE]:[PAT HERE]");
+    sessionStorage.removeItem("oidc.user:[PAT HERE]:[PAT HERE]");
     // Redirect to Cognito logout
     const clientId = "[PAT HERE]";
     const logoutUri = "http://localhost:5500";
-    const cognitoDomain = "https://us-east-1inkypm0ac.auth.us-east-1.amazoncognito.com";
+    const cognitoDomain = "[PAT HERE]";
     window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
 };
 
